@@ -40,7 +40,7 @@ header nav[aria-expanded='true'] {
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 0 32px;
+    padding: 50px 0px;
   }
 
   header nav[aria-expanded='true'] {
@@ -149,7 +149,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 150px;
   height: auto;
 }
 
@@ -186,10 +186,15 @@ header nav .nav-sections ul > li > ul > li {
 }
 
 @media (width >= 900px) {
+  header nav .nav-brand img{
+    width:130% !important;
+  }
   header nav .nav-sections {
-    display: block;
+    /*display: block;*/
     visibility: visible;
     white-space: nowrap;
+    display: flex !important;
+    justify-content: flex-end !important;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
@@ -206,14 +211,14 @@ header nav .nav-sections ul > li > ul > li {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 0.5em;
-    right: 2px;
+    top: 0.2em;
+    right: 0px;
     transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
+    border-width: 1px 1px 0 0;
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
@@ -224,15 +229,50 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 24px;
+    gap: 25px;
     margin: 0;
+    align-items: center;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    color:#333232;
+    font-size: 18px;
+    font-weight: 600;
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li:hover {
+    color:#0659d4;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li a {    
+    text-decoration: none;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li:first-child {    
+    color:#0659d4;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li:last-child p {    
+    font-weight: normal;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li:last-child { 
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #0659d4;
+    transition: .5s;
+  }
+  header nav .nav-sections .default-content-wrapper > ul > li:last-child:hover { 
+    background-color: #0a257a;
+  }
+  
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
     position: relative;
@@ -263,6 +303,12 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
+    color:#333232;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li:hover {
+    color:#0659d4;
   }
 }
 
