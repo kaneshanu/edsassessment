@@ -192,8 +192,68 @@ header nav .nav-sections ul > li > ul > li {
 .header-wrapper .nav-brand .default-content-wrapper p:last-child{ 
   display: none;
 }
+.section.navtopbar{
+  display: none;
+}
+
+.hero-container.columns-container{
+  margin: 0;
+}
+
+.header{display: none;}
 
 @media (width >= 900px) {
+
+  .section.navtopbar{
+    display: block;
+    background-color: #0659d4;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+  } 
+
+  .section.navtopbar .columns-wrapper{
+    max-width: 1264px;
+  }
+  .section.navtopbar .columns-wrapper .columns.block{
+    align-items: center !important;
+    justify-content: space-between !important;
+    display: flex;
+  }
+  .section.navtopbar .columns-wrapper .columns.block > div {
+    width: 100%;
+  }
+  .section.navtopbar .columns-wrapper .columns.block > div > div:nth-child(1){
+    width:50%;
+    flex: none;
+  }
+  .section.navtopbar .columns-wrapper .columns.block > div > div:nth-child(2){
+    width:25%;
+  }
+  .section.navtopbar .columns-wrapper .columns.block > div > div:nth-child(3){
+    width:25%;
+  }
+   
+  .section.navtopbar .columns-wrapper ul{    
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .section.navtopbar .columns-wrapper ul{    
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .section.navtopbar .columns-wrapper ul li .icon{   
+    height: 14px;
+    width: 14px;
+  }
+
   .header-wrapper.is-sticky{   
     position: sticky;
     top: 0;
