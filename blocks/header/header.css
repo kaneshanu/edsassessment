@@ -185,7 +185,33 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+.header-wrapper{
+  transition: .5s;
+}
+
+.header-wrapper .nav-brand .default-content-wrapper p:last-child{ 
+  display: none;
+}
+
 @media (width >= 900px) {
+  .header-wrapper.is-sticky{   
+    position: sticky;
+    top: 0;
+    transition: .5s;
+  }
+  .header-wrapper.is-sticky .nav-brand .default-content-wrapper p:first-child{ 
+    display: none;
+  }
+  .header-wrapper.is-sticky .nav-brand .default-content-wrapper p:last-child{ 
+    display: block;
+  }
+  .header-wrapper.is-sticky .nav-wrapper{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .header-wrapper.is-sticky nav .nav-sections .default-content-wrapper > ul > li{
+    color:#fff;
+  }
+  
   header nav .nav-brand img{
     width:130% !important;
   }

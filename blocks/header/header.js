@@ -4,6 +4,15 @@ import { loadFragment } from '../fragment/fragment.js';
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.header-wrapper');
+  if (window.scrollY > 150) { // Sticky after 100px
+    header.classList.add('is-sticky');
+  } else {
+    header.classList.remove('is-sticky');
+  }
+});
+
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
