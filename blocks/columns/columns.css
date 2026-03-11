@@ -141,3 +141,27 @@
     }
   }
 }
+
+.section.leftimgrighttwocols {
+  .columns-wrapper {
+    color: #333232;
+    .columns > div > .columns-img-col { 
+      &+ div {
+        h4:first-child {
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 18px;
+          color:#0659d4;
+        }
+        h2{
+          font-size: 32px;
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          line-height: 1.2;
+          font-weight: 600;
+          color:#333232;
+        }
+      }
+    }
+  }
+}
