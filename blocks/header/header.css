@@ -187,6 +187,7 @@ header nav .nav-sections ul > li > ul > li {
 
 .header-wrapper{
   transition: .5s;
+  margin-top: 47px;
 }
 
 .header-wrapper .nav-brand .default-content-wrapper p:last-child{ 
@@ -200,7 +201,7 @@ header nav .nav-sections ul > li > ul > li {
   margin: 0;
 }
 
-.header{display: none;}
+/*.header{display: none;}*/
 
 @media (width >= 900px) {
 
@@ -211,7 +212,6 @@ header nav .nav-sections ul > li > ul > li {
     top: 0;
     position: fixed;
     width: 100%;
-    padding: 10px 0;
   } 
 
   .section.navtopbar .columns-wrapper{
@@ -234,6 +234,13 @@ header nav .nav-sections ul > li > ul > li {
   }
   .section.navtopbar .columns-wrapper .columns.block > div > div:nth-child(3){
     width:25%;
+    gap:12px;
+    display: flex;
+    justify-content: end;
+  }
+  .section.navtopbar .columns-wrapper .columns.block > div > div:nth-child(3) p .icon{
+    height: 18px;
+    width: 18px;
   }
    
   .section.navtopbar .columns-wrapper ul{    
@@ -241,23 +248,26 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0;
-  }
-  .section.navtopbar .columns-wrapper ul{    
     font-size: 15px;
     font-weight: 500;
     color: #fff;
+    gap: 20px;
   }
 
   .section.navtopbar .columns-wrapper ul li .icon{   
     height: 14px;
     width: 14px;
+    margin-right: 7px;
   }
 
   .header-wrapper.is-sticky{   
     position: sticky;
     top: 0;
     transition: .5s;
+    margin-top: 0px;
+  }
+  .header-wrapper.is-sticky + main .navtopbar{ 
+    display: none;
   }
   .header-wrapper.is-sticky .nav-brand .default-content-wrapper p:first-child{ 
     display: none;

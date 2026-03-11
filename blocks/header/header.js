@@ -8,8 +8,10 @@ window.addEventListener('scroll', () => {
   const header = document.querySelector('.header-wrapper');
   if (window.scrollY > 150) { // Sticky after 100px
     header.classList.add('is-sticky');
+   // navTopbar.style.display = "none";
   } else {
     header.classList.remove('is-sticky');
+    //navTopbar.style.display = "block";
   }
 });
 
