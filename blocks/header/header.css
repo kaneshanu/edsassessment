@@ -188,6 +188,7 @@ header nav .nav-sections ul > li > ul > li {
 .header-wrapper{
   transition: .5s;
   margin-top: 47px;
+  z-index: 99999;
 }
 
 .header-wrapper .nav-brand .default-content-wrapper p:last-child{ 
@@ -241,6 +242,7 @@ header nav .nav-sections ul > li > ul > li {
   .section.navtopbar .columns-wrapper .columns.block > div > div:nth-child(3) p .icon{
     height: 18px;
     width: 18px;
+    cursor: pointer;
   }
    
   .section.navtopbar .columns-wrapper ul{    
@@ -258,6 +260,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 14px;
     width: 14px;
     margin-right: 7px;
+    cursor: pointer;
   }
 
   .header-wrapper.is-sticky{   

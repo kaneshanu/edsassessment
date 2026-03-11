@@ -151,3 +151,16 @@
     --slide-content-width: auto;
   }
 }
+
+.section.herocarouselsection {
+  margin: 0;
+  .carousel-wrapper{
+    width: 100% !important;
+    max-width: 100%;
+    padding: 0px;
+    .carousel .carousel-slide{
+      min-height: 100%;
+    }
+  }
+}
+
