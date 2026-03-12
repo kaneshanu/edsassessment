@@ -160,6 +160,28 @@
     padding: 0px;
     .carousel .carousel-slide{
       min-height: 100%;
+      height: 900px;
+    }
+    nav{
+      display: none;
+    }
+    .carousel-slide-content{
+      background-color: transparent;
+      left: 10%;
+      p {
+        margin-bottom: 30px;
+        a {
+          background-color: #0659d4;
+          border-radius: 10px;
+          padding: 15px 40px 15px 40px;
+          color: #fff;
+          text-decoration: none;
+          transition: 1s;
+          &:hover{
+            background-color: #0a257a;
+          }
+        }
+      }
     }
   }
 }
