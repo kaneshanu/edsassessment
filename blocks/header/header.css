@@ -298,6 +298,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav[aria-expanded='true'] .nav-sections {
     align-self: unset;
+    padding-right: 20px;
   }
 
   header nav .nav-sections .nav-drop {
